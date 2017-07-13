@@ -67,7 +67,7 @@ plainBox.color = "blue";
 plainBox.size = 10;
 plainBox.content = [];
 
-console.log(plainBox);
+//console.log(plainBox);
 
 /*
    Declare a variable named `stockCar` and create the following properties (key-value pairs) to the object:
@@ -78,22 +78,62 @@ console.log(plainBox);
             - add a key named `passengers` and set it to be an empty array.
 */
 
+var stockCar = {
+  model: "Nissan",
+  year: 2014,
+  automaticTransition: "True",
+  driver: "null",
+  passengers: [],
 
-/*
-   Add new property inside a function
-   Declare a variable named `plainPerson`. Set its value to be an EMPTY object with no properties.
+}
 
-   Next, declare a function named `buildPerson` and then define three parameters. The first parameter will be named `person` 
-   and the second will be `nameString` and the third will be `age`. Within this function you will modify the `person` object 
-   by:
-            - adding a property called `name` and set its value to be the second parameter.
-            - adding a property called `age` and set its value to be the third parameter.
+  //console.log(stockCar);
 
-   The function will return the first parameter.
-   Finally, invoke your new function while passing in the `plainPerson` object and additional agrument values, then store 
-   the return value in a variable named `completePerson`. Use `console.log` three times to print the entire object, just 
-   the value at `name`, and just the value at `age`.
- */
+
+
+/*    Add new property inside a function    Declare a variable named
+`plainPerson`. Set its value to be an EMPTY object with no properties.
+
+   Next, declare a function named `buildPerson` and then define three
+   parameters. The first parameter will be named `person`  and the second will
+   be `nameString` and the third will be `age`. Within this function you will
+   modify the `person` object  by: - adding a property called `name` and set
+   its value to be the second parameter. - adding a property called `age` and
+   set its value to be the third parameter.
+
+   The function will return the first parameter.    Finally, invoke your new
+function while passing in the `plainPerson` object and additional agrument
+values, then store     the return value in a variable named `completePerson`.
+Use `console.log` three times to print the entire object, just     the value
+at `name`, and just the value at `age`.  */
+
+var plainPerson = {}
+// creates an empty variable (plain person)
+
+function buildPerson (person, nameString, age, hobby) {
+// this tells the computer you are going to add things aka keys to the
+// variable (plain person). We are giving the function a name build a person.
+  plainPerson.name = nameString;
+  plainPerson.age = age; 
+  plainPerson.hobby = hobby
+
+ // this section assigns assigns new value to the key.
+ 
+  return plainPerson;
+
+// need to tell the computer to return the information.
+
+}
+
+var completePerson = buildPerson(plainPerson, "Cheryl", 20, "computers");
+console.log(completePerson);
+
+var completePerson2 = buildPerson(plainPerson, "Nat", 10, "veggies");
+console.log(completePerson2);
+
+
+
+
 
 
 /*
