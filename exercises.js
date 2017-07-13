@@ -17,7 +17,16 @@ A literal object.
  
  "My dog `name` is `age` year old likes to `speak`."
  */ 
+var dog = {
+  name: "Dakota",
+  age: 2,
+  vegeterian: "false",
+  color: "black",
+  speak: "woof",
+}
 
+console.log(dog.name);
+// this is not a function it is just a variable so only need the name of variable.
 
 /*
 An empty object
