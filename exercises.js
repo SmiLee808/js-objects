@@ -25,8 +25,9 @@ var dog = {
   speak: "woof",
 }
 
-console.log(dog.name);
-console.log("My Dog", dog.name, "is", dog.age, "and he likes", dog.speak,);
+//console.log(dog.name);
+//console.log("My Dog", dog.name, "is", dog.age, "and he likes", dog.speak,);
+
 // this is not a function it is just a variable so only need the name of variable.
 
 /*
@@ -42,7 +43,15 @@ An empty object
   Console.log the object.
 */
 
-var kicks
+var kicks = {}
+
+kicks.brand = "asics";
+kicks.color = "red";
+kicks.size = 8.5;
+kicks.buy = "Hel Yeah!"
+
+//console.log(kicks);
+
 
 
 /* 
@@ -53,6 +62,12 @@ var kicks
             - add a property named `contents` and set it to be an empty array.
 */
 
+var plainBox = {}
+plainBox.color = "blue";
+plainBox.size = 10;
+plainBox.content = [];
+
+console.log(plainBox);
 
 /*
    Declare a variable named `stockCar` and create the following properties (key-value pairs) to the object:
