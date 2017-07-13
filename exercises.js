@@ -26,6 +26,7 @@ var dog = {
 }
 
 console.log(dog.name);
+console.log("My Dog", dog.name, "is", dog.age, "and he likes", dog.speak,);
 // this is not a function it is just a variable so only need the name of variable.
 
 /*
@@ -40,6 +41,8 @@ An empty object
             
   Console.log the object.
 */
+
+var kicks
 
 
 /* 
